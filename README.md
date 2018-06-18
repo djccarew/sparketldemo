@@ -18,7 +18,7 @@ If you are not already signed up for Watson Studio, [sign up here](https://www.i
 
 ### 3. Create an instance of the Spark Service
 
-3.1 Click on the **Settings** tab 
+3.1 Click on the **Settings** tab of your newly created project
 
 3.2 Scroll down to the *Associated services* section and click on **Add service**
 
@@ -44,13 +44,13 @@ Use the following URL for the Scala version
 
 ### 5. Create the DB2 target database 
 
-5.1 In a separate browser tab go to [](http://bluemix.net). Select the Catalog and create an instance of DB2 (Lite Plan) 
+5.1 In a separate browser tab go to [http://bluemix.net](http://bluemix.net). Select the ***Catalog*** and create an instance of DB2 (Lite Plan) 
 
 5.2 When the instance is created, click on **Open Console**
 
 5.3 Click on the "hamburger" icon at the top left and select **RUN SQL**
 
-5.4 Enter the following SQL and run it to create the table that the demo will use to store the result of the ETL:
+5.4 Copy and paste the  following SQL and then run it to create the table that the demo will use to store the result of the ETL:
 
 ```
 create table TXSSByCounty (
@@ -70,4 +70,4 @@ create table TXSSByCounty (
 
 ### 6. Run the notebook
 
-6.1  Go back to tthe  open notebook and run  each code block in turn. Make sure you put your DB2 credentilas in the  final code block so the data will be written to your DB2 instance. Once the notebook has run successfully, use your DB2 console to verify that the data has been loaded sucessfully into your database.
+6.1  Go back to the open notebook and run  each code block in turn. Make sure you put your DB2 credentilas in the  final code block so the data will be written to your DB2 instance. Once the notebook has run successfully, use your DB2 console to verify that the data has been loaded sucessfully into your database.
